@@ -28,6 +28,7 @@ img{display: block;}
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--background-color-body);
+          display: block;
     gap: 40px;
     padding: 24px 0;
 }
@@ -35,12 +36,23 @@ img{display: block;}
  .main-menu:focus {
         color: var(--color-focus-blu);
 }
+.nav-class {
+    display: flex;
+    align-items: center;
+    /* gap: 40px; */
+    justify-content: space-between;
+}
+.adr-container {
+    display: flex;
+    /* align-items: left; */
+    gap: 40px;
+    /* justify-content: space-between; */
+}
 .flex-container{
     display: flex;
     align-items: center;
     gap: 40px;
-    justify-content: space-between;
-    border-bottom: 1px solid #e7e9fc
+        border-bottom: 1px solid #e7e9fc
 }
 .flex-container-first{
     box-sizing: content-box;
@@ -58,7 +70,6 @@ img{display: block;}
     align-items: center;
     column-gap: 24px;
     row-gap: 48px;
-    margin-bottom: 72px;
     border-top: none;
 }
 .portfolio-li{
@@ -67,16 +78,13 @@ img{display: block;}
 }
 .portfolio-list{
     padding: 32px 16px;
-
     border: 1px solid var(--color-border-portfolio);
     border-top: none;
 }
 .flex-container-menu-portfolio{
     display: flex;
-    align-items: center;
     gap: 24px;
     margin-bottom: 72px;
-    padding-top: 96px;
 }   
 .flex-container-third {
     display: flex;
@@ -95,16 +103,15 @@ img{display: block;}
 }
 
 .main-return-index{
-   
+    color: var(--portfolio-filter-color);
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: 76px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--portfolio-filter-color);
+    margin-right: 76px;
  }
 .main-footer-index {
     font-family: 'Raleway', sans-serif;
@@ -128,7 +135,6 @@ img{display: block;}
     color: #FFFFFF;
 } */
 .main-p-footer {
-    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -156,8 +162,13 @@ img{display: block;}
 .main-section-first{
     /* background-color: var(--background-color-body); */
     /* background: rgba(46, 47, 66, 0.7); */
-    background: url(../images/hero-image.jpg);
-    
+    max-width: 1440px;
+    background-position: center;
+    background-size: cover;
+    /* background-image: url(../images/hero-image.jpg); */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                                      rgba(46, 47, 66, 0.7)),
+                                       url(../images/hero-image.jpg);
     background-repeat: no-repeat;
     /* background-size: contain; */
     border-style: cover;
@@ -204,6 +215,7 @@ margin: auto;;
 .main-section-second{
     padding-top: 120px;
     padding-bottom: 120px;
+    /* background-color: #f4f4fd; */
 }
 .h-two-hidden{
     content-visibility: hidden;
@@ -278,12 +290,6 @@ margin: auto;;
     background-color: var(--portfolio-filter-background);
     color:var(--portfolio-filter-color);
     cursor: pointer;
-    display: flex;
-    box-sizing: border-box; 
-    gap: 24px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 12px 24px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
@@ -301,19 +307,16 @@ margin: auto;;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--background-color-body);
-    margin-top: 32px;
     margin-bottom: 8px;
-    margin-left: 8px;
 }
 .portfolio-p{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-main-menu);
-    margin-left: 8px;
 } 
 .main-img{
-    display: block; 
+    /* display: block;  */
     max-width: 100%;
      height: auto;
      flex-basis: calc((100% - 48px) / 3);
@@ -323,6 +326,10 @@ margin: auto;;
 }
 .header-class{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+    /* box-shadow: ; */
 }
 .container {
     width: 1158px;
@@ -347,7 +354,6 @@ margin: auto;;
     display: flex;
     flex-direction: row;
     align-items: center;
-    outline: 2px solid red;
     margin: 0 auto;
     gap: 24px;
     justify-content: center;
@@ -417,7 +423,7 @@ margin: auto;;
     /* top: 0px; */
 
     /* CLOUD */
-
+    margin-bottom: 8px;
     background: #F4F4FD;
     border-radius: 4px;
 }
