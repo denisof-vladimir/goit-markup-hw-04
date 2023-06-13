@@ -425,8 +425,12 @@ margin: auto;;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+   
+    background-color: #31d0aa;
+    border: 1px solid transparent;
 }
 .team-soc-icon{
     fill: var(--title-color);
@@ -449,11 +453,11 @@ margin: auto;;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     /* identical to box height, or 150% */
 
     letter-spacing: 0.02em;
-   
+    margin-bottom: 16px;
     /* WHITE */
 
     color: var(--title-color);
