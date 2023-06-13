@@ -356,7 +356,7 @@ margin: auto;;
     align-items: center;
         justify-content: center;
         height: 112px;
-        background-color: #f4f4fd;
+        background-color:var(--portfolio-filter-background);
         border-radius: 4px;
         /* margin-bottom: 8px; */
 }
@@ -408,7 +408,7 @@ margin: auto;;
 .team-soc{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 16px;
 }
 .team-soc-item{
     height: 40px;
@@ -419,7 +419,7 @@ margin: auto;;
 .team-soc-link{
     width: 100%;
     height: 100%;
-    background-color: #4D5AE5;
+    background-color: var(--portfolio-filter-color);
     border-radius: 50%;
     /* display: block; */
     display: flex;
@@ -429,7 +429,7 @@ margin: auto;;
 
 }
 .team-soc-icon{
-    fill: #FFFFFF;
+    fill: var(--title-color);
     color: black;
 }
 
@@ -440,7 +440,7 @@ margin: auto;;
     height: 88px;
     align-items: center;
     justify-content: center;
-    background: #F4F4FD;
+    background:var(--portfolio-filter-background);
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
@@ -456,7 +456,7 @@ margin: auto;;
    
     /* WHITE */
 
-    color: #FFFFFF;
+    color: var(--title-color);
 }
 .block-social-media{
     margin-left: 120px;
@@ -466,12 +466,12 @@ margin: auto;;
     align-items: center;
     justify-content: center;
     height: 112px;
-    background-color: #f4f4fd;
+    background-color:var(--portfolio-filter-background);
     border-radius: 4px;
     margin-bottom: 8px;
 }
  .second-perevagi-icon {
-    fill: #F4F4FD;
+    fill: var(--portfolio-filter-background);
 }
 
 
