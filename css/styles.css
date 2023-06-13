@@ -324,6 +324,9 @@ margin: auto;;
 }
 .main-img-team {
      flex-basis: calc((100% - 3 * 24px) / 4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .header-class{
     border-bottom: 1px solid #e7e9fc;
@@ -344,6 +347,12 @@ margin: auto;;
     width: 1158px;
     display: flex;
     gap: 24px;
+    align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        /* margin-bottom: 8px; */
 }
 .second-li{
     flex-basis: calc((100% - 72px) / 4);
@@ -447,7 +456,7 @@ margin: auto;;
     margin-left: 120px;
 }
 .section-second-icon{
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -456,13 +465,7 @@ margin: auto;;
     margin-bottom: 8px;
 }
  .second-perevagi-icon {
-    width: 264px;
-    height: 112px;
-    /* left: 0px; */
-    /* top: 0px; */
-
-    /* CLOUD */
-    margin-bottom: 8px;
-    background: #F4F4FD;
-    border-radius: 4px;
+    fill: #F4F4FD;
 }
+
+
