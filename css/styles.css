@@ -493,7 +493,8 @@ margin: auto;;
     /* #f4f4fd */
     background:var(--color-main-total);
     width: calc((100% - 120px) / 6);
-    height:min-content 88px;
+    height: 88px;
+    /* height:min-content 88px; */
 }
 .customer-link{
     width: 100%;
